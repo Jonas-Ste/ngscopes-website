@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Not published yet.
+Disallow: /careers.html
+Disallow: /careers/
+
+Sitemap: https://ngscopes.com/sitemap.xml

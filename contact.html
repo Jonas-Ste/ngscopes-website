@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact — NGScopes</title>
+	<meta name="description" content="Get in touch with NGScopes — Dresden, Germany.">
+	<link rel="canonical" href="https://ngscopes.com/contact.html">
+	<meta name="robots" content="index, follow">
+
+	<meta property="og:title" content="Contact — NGScopes">
+	<meta property="og:description" content="Get in touch with NGScopes, Dresden, Germany.">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ngscopes.com/contact.html">
+	<meta property="og:image" content="https://ngscopes.com/assets/img/favicon_g.png">
+
+	<link rel="icon" href="assets/img/favicon-32.png" sizes="32x32">
+	<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+	<link rel="preload" as="font" type="font/woff2" href="assets/fonts/inter-latin.woff2" crossorigin>
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- @partial:header -->
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="glow" aria-hidden="true"></div>
+
+<header class="site-header">
+	<div class="wrap">
+		<a class="brand" href="index.html" aria-label="NGScopes — home">
+			<img src="assets/img/logo-header.png" alt="NGScopes" width="163" height="26">
+		</a>
+
+		<nav class="site-nav" aria-label="Main">
+			<ul>
+				<li><a class="nav-cta" href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!-- @endpartial -->
+
+<main id="main">
+
+	<section class="page-head">
+		<div class="wrap wrap--narrow">
+			<h1>Contact</h1>
+			<p class="lead">Use the contact form below or the email address to get in touch.</p>
+		</div>
+	</section>
+
+	<section class="section section--tight">
+		<div class="wrap">
+			<div class="contact-layout">
+
+				<!-- =========================================================
+				     CONTACT FORM
+
+				     How this behaves today: with no endpoint configured, the
+				     form opens the visitor's email program with all fields
+				     already filled in. Nothing is sent in the background and
+				     no third party sees the data.
+
+				     To switch on real background sending, set FORM_ENDPOINT
+				     at the top of assets/js/main.js. See CONTENT.md — there
+				     are GDPR steps that go with it.
+				     ========================================================= -->
+				<form class="form" id="contact-form" novalidate>
+
+					<div class="field">
+						<label for="cf-name">Name <span aria-hidden="true">*</span></label>
+						<input type="text" id="cf-name" name="name" autocomplete="name" required>
+					</div>
+
+					<div class="field">
+						<label for="cf-email">Email <span aria-hidden="true">*</span></label>
+						<input type="email" id="cf-email" name="email" autocomplete="email" required>
+					</div>
+
+					<div class="field">
+						<label for="cf-org">Organisation <span class="field__hint">optional</span></label>
+						<input type="text" id="cf-org" name="organisation" autocomplete="organization">
+					</div>
+
+					<div class="field">
+						<label for="cf-message">Message <span aria-hidden="true">*</span></label>
+						<textarea id="cf-message" name="message" rows="6" required></textarea>
+					</div>
+
+					<!-- Honeypot: hidden from people, tempting to bots. Never remove. -->
+					<div class="field field--trap" aria-hidden="true">
+						<label for="cf-website">Do not fill this in</label>
+						<input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+					</div>
+
+					<p class="form__note">
+						We use your details only to answer your enquiry. See our
+						<a href="privacy.html">privacy policy</a>.
+					</p>
+
+					<button class="btn btn--solid" type="submit">Send message</button>
+
+					<p class="form__status" id="form-status" role="status" aria-live="polite"></p>
+
+					<noscript>
+						<p class="form__note">
+							This form needs JavaScript. Please write to
+							<a href="mailto:contactform@ngscopes.com">contactform@ngscopes.com</a>
+							instead.
+						</p>
+					</noscript>
+				</form>
+
+				<aside class="contact-aside">
+					<div class="card">
+						<p class="contact-card__label">Direct</p>
+						<p>
+							<a href="mailto:contactform@ngscopes.com?subject=Enquiry%20%E2%80%93%20NGScopes">contactform@ngscopes.com</a>
+						</p>
+					</div>
+
+					<!-- No location or postal address block here on purpose. The
+					     registered address is a private home address until the company
+					     rents premises, so it appears only in the imprint, where § 5 DDG
+					     requires it. The footer already links there. Please do not add
+					     an address back to this page. -->
+
+					<div class="card">
+						<p class="contact-card__label">Follow</p>
+						<p>
+							<a href="https://www.linkedin.com/company/ngscopes/" target="_blank" rel="noopener">NGScopes on LinkedIn</a>
+						</p>
+					</div>
+				</aside>
+
+			</div>
+		</div>
+	</section>
+
+</main>
+
+<!-- @partial:footer -->
+<footer class="site-footer">
+	<div class="wrap">
+		<nav class="footer-links" aria-label="Footer">
+			<a href="contact.html">Contact</a>
+			<a href="https://www.linkedin.com/company/ngscopes/" target="_blank" rel="noopener">LinkedIn</a>
+			<a href="imprint.html">Imprint</a>
+			<a href="privacy.html">Privacy</a>
+		</nav>
+		<p class="footer-meta">&copy; <span data-year>2026</span> NGScopes GmbH i.G. &middot; Dresden, Germany</p>
+	</div>
+</footer>
+<!-- @endpartial -->
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

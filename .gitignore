@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Internal notes — must never be published (the repo is public)
+NOTES-private.md
+
+# Lokales Archiv gelöschter Seiten — bewusst nicht im öffentlichen Repo
+_archive/
