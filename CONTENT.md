@@ -82,21 +82,30 @@ ready.
 
 ---
 
-## 3. When the company is entered in the register
+## 3. Numbers that still have to go into the imprint
 
-The company currently appears as **NGScopes GmbH i.G.** Once the HRB number
-is issued:
+The company is registered: **Amtsgericht Dresden, HRB 48453**, entered in
+August 2026. The `i.G.` suffix is gone from the whole site.
 
-1. Replace `NGScopes GmbH i.G.` with `NGScopes GmbH` in `imprint.html`,
-   `privacy.html`, `contact.html` and `tools/partials/footer.html`, then run
-   `./tools/sync-partials.sh`.
-2. In `imprint.html`, un-comment the *Register entry* and *VAT identification
-   number* sections and fill them in. Both are mandatory under § 5 DDG once
-   they exist.
+Two numbers are still missing, and both become **mandatory the moment they
+exist** — neither has to be applied for because of this website:
 
-```bash
-grep -rn "i.G." --include="*.html" .
-```
+| Number | Status | What to do |
+|---|---|---|
+| VAT identification number (§ 27a UStG) | applied for | Un-comment the prepared section in `imprint.html` and fill it in |
+| Wirtschafts-Identifikationsnummer | not yet assigned | Same; the tax office assigns it unprompted |
+
+Do not confuse the VAT identification number (`DE` + nine digits) with the
+tax number from the tax office. The tax number does **not** belong in an
+imprint.
+
+Deliberately omitted: a phone number. Email plus the contact form is the
+chosen setup.
+
+Since the company is now registered, § 35a GmbHG also applies to business
+letters — and that includes email. Signatures need company name, legal form,
+registered seat, register court, HRB number and the managing directors. That
+is outside this repository, but it is the same set of facts.
 
 ---
 

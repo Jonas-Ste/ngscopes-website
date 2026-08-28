@@ -7,14 +7,20 @@
   Checked against the eRecht24 imprint generator (state: 22 July 2025) —
   see CONTENT.md for the full comparison.
 
-  TODO once the company is entered in the commercial register:
-    * drop the "i.G." from the company name everywhere on the site
-      (imprint, privacy, contact, footer partial — then run
-      ./tools/sync-partials.sh)
-    * add the register court and HRB number in the section marked below
-    * add the VAT identification number (§ 27a UStG) once issued
+  The company was entered in the commercial register in August 2026:
+  Amtsgericht Dresden, HRB 48453. The "i.G." suffix is gone.
 
-  Have this page checked by your legal counsel before launch.
+  Still open:
+    * the VAT identification number (§ 27a UStG) has been applied for. The
+      section below is prepared and commented out — activate it once the
+      number arrives. Stating it is mandatory as soon as it exists.
+    * the Wirtschafts-Identifikationsnummer, likewise, once the tax office
+      assigns one.
+
+  Deliberately omitted: a phone number. Email plus the contact form is the
+  chosen setup.
+
+  Have this page checked by your legal counsel.
 =========================================================================
 -->
 <html lang="en">
@@ -23,7 +29,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Imprint — NGScopes</title>
-	<meta name="description" content="Legal notice and company information for NGScopes GmbH i.G., Dresden, Germany.">
+	<meta name="description" content="Legal notice and company information for NGScopes GmbH, Dresden, Germany.">
 	<link rel="canonical" href="https://ngscopes.com/imprint.html">
 	<meta name="robots" content="index, follow">
 
@@ -68,7 +74,7 @@
 
 			<h2>Company</h2>
 			<address>
-				NGScopes GmbH i.G.<br>
+				NGScopes GmbH<br>
 				Polenzstraße 3<br>
 				01277 Dresden<br>
 				Germany
@@ -87,31 +93,33 @@
 				<dd><a href="mailto:contactform@ngscopes.com">contactform@ngscopes.com</a></dd>
 				<dt>Contact form</dt>
 				<dd><a href="contact.html">ngscopes.com/contact.html</a></dd>
-				<!-- TODO (recommended): add a phone number.
-				     § 5 DDG requires a means of "immediate communication" in addition to
-				     the email address. The ECJ (C-298/07) accepts a contact form for
-				     this — but our form currently just hands the message to the
-				     visitor's own email program, so it is the same channel, not a
-				     second one. A phone number closes that gap. -->
+				<!-- No phone number, by decision. § 5 DDG asks for a means of
+				     "immediate communication" besides the email address; the ECJ
+				     (C-298/07) accepts a contact form for that. Revisit if the
+				     company ever gets a published number. -->
 			</dl>
 
-			<!-- TODO: add once the company is registered / the numbers are issued.
-			     Besides the register entry and the VAT ID, the Wirtschafts-Identifikations-
-			     nummer (W-IdNr.) has to be stated once the tax authorities assign one —
-			     they are being rolled out to all businesses from November 2024 onwards.
 			<h2>Register entry</h2>
 			<dl>
 				<dt>Register court</dt>
 				<dd>Amtsgericht Dresden</dd>
 				<dt>Register number</dt>
-				<dd>HRB [number]</dd>
+				<dd>HRB 48453</dd>
 			</dl>
+
+			<!-- TODO: activate as soon as the numbers are issued. Both are mandatory
+			     once they exist, and neither has to be applied for on account of this
+			     website.
+
+			     The VAT identification number has been applied for.
+			     The Wirtschafts-Identifikationsnummer is assigned by the tax office
+			     unprompted; it is being rolled out to all businesses since Nov 2024.
 
 			<h2>VAT identification number</h2>
 			<p>
 				VAT identification number pursuant to § 27a of the German VAT Act
 				(Umsatzsteuergesetz):<br>
-				[DE …]
+				DE …
 			</p>
 			-->
 
@@ -183,7 +191,7 @@
 			<a href="imprint.html">Imprint</a>
 			<a href="privacy.html">Privacy</a>
 		</nav>
-		<p class="footer-meta">&copy; <span data-year>2026</span> NGScopes GmbH i.G. &middot; Dresden, Germany</p>
+		<p class="footer-meta">&copy; <span data-year>2026</span> NGScopes GmbH &middot; Dresden, Germany</p>
 	</div>
 </footer>
 <!-- @endpartial -->
